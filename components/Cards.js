@@ -80,9 +80,6 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
 
     const cardsContainer = document.querySelector('.cards-container'); 
 
-    console.log(merged); 
-
-
     merged.forEach(cur => {
 
         const article = articleMaker(cur); 
@@ -94,7 +91,6 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
     document.querySelector('.cards-container').addEventListener('click', (e) => {
         console.log(e.target.textContent); 
     })
-
 
 
 
